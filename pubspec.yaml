@@ -57,7 +57,7 @@ dependencies:
   qr_code_scanner:
     git:
       url: 'https://github.com/NeverOvO/qr_code_scanner.git'
-      ref: '3fe7b88'
+#      ref: '3fe7b88'
   # App Shortcuts https://github.com/flutter/packages/tree/main/packages/quick_actions
   quick_actions: 1.0.7
   # 振动 https://github.com/benjamindean/flutter_vibration
@@ -70,7 +70,7 @@ dependencies:
   # 高德2D地图插件（支持Web） https://github.com/simplezhli/flutter_2d_amap
   flutter_2d_amap:
     git:
-      ref: '0105ceae'
+#      ref: '0105ceae'
       url: 'https://github.com/simplezhli/flutter_2d_amap.git'
   # demo 用到的库
   # 刮刮卡 https://github.com/vintage/scratcher
@@ -78,6 +78,8 @@ dependencies:
   # 动画效果 https://github.com/xvrh/lottie-flutter
   lottie: ^3.1.2
   win32: 5.5.3
+
+  cryptography: ^2.7.0 # 请检查最新版本
 
 # https://github.com/simplezhli/flutter_deer/issues/187
 dependency_overrides:

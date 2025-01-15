@@ -46,6 +46,7 @@ class _LoginPageState extends State<LoginPage> with ChangeNotifierMixin<LoginPag
   @override
   void initState() {
     super.initState();
+
     WidgetsBinding.instance.addPostFrameCallback((_) {
       /// 显示状态栏和导航栏
       SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [SystemUiOverlay.top, SystemUiOverlay.bottom]);
@@ -82,6 +83,7 @@ class _LoginPageState extends State<LoginPage> with ChangeNotifierMixin<LoginPag
     return Scaffold(
       appBar: MyAppBar(
         isBack: false,
+        //验证码登录
         actionName: DeerLocalizations.of(context)!.verificationCodeLogin,
         onPressed: () {
           NavigatorUtils.push(context, LoginRouter.smsLoginPage);

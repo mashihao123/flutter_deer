@@ -135,7 +135,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final Widget app = MultiProvider(
       providers: [
+        //样式监听
         ChangeNotifierProvider(create: (_) => ThemeProvider()),
+        //中文/英文 转换 监听
         ChangeNotifierProvider(create: (_) => LocaleProvider())
       ],
       child: Consumer2<ThemeProvider, LocaleProvider>(
